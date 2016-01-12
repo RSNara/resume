@@ -155,7 +155,7 @@ const DATA = {
       link: 'http://lolqueen.net',
       achievements: [
         'Authored utilities to query RIOT\'s APIs that seamlessly handle rate limiting',
-        'Built a React + Redux front-end to display Summoner Match history',
+        'Built a React + Redux front-end to display Summoner match history',
       ],
     }, {
       name: 'CVAS - HTML5 Canvas Hack',
