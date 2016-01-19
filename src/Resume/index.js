@@ -74,9 +74,9 @@ const DATA = {
       'PivotalTracker',
       'Git',
       'Webpack',
+      'MongoDB',
       'Gulp',
       'Broccoli',
-      'MongoDB',
       'Redis',
       'Puppet',
     ],
@@ -101,7 +101,7 @@ const DATA = {
   main: {
     interests: [
       'Following technological advancements; scripting; digital art; Project Euler',
-      'Over-engineering resumes using React (GitHub: noodlemaster/resume-react)',
+      'Over-engineering resumes using React (ex: noodlemaster/resume-react)',
     ],
     companies: [{
       name: 'Rangle.io',
