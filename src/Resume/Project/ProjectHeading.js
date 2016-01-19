@@ -22,7 +22,8 @@ const style = {
   },
   tools: {
     fontSize: '0.75rem',
-    color: 'rgba(77, 100, 141, 0.75)',
+    fontWeight: 'bold',
+    color: 'rgba(77, 100, 141, 1)',
   },
 };
 

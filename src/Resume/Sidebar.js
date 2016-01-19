@@ -29,7 +29,7 @@ const Sidebar = ({ data }) => (
 
 const style = {
   main: {
-    width: '29%',
+    width: '27.5%',
     backgroundColor: 'rgba(118,136,169,0.125)',
     display: 'flex',
     flexDirection: 'column',

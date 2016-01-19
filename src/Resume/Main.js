@@ -18,7 +18,7 @@ const Main = ({ companies, projects, interests }) => (
             name={project.name}
             tools={project.tools}
             achievements={project.achievements}
-            link={project.link}
+            links={project.links}
             key={key} />
         </Section>
       ))}
@@ -31,7 +31,7 @@ const Main = ({ companies, projects, interests }) => (
 
 const style = {
   main: {
-    padding: '2rem 1.25rem',
+    padding: '2rem 2rem 2rem 1.25rem',
   },
 };
 

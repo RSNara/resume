@@ -30,10 +30,7 @@ const DATA = {
       name: 'JavaScript',
       proficiency: 0.8,
     }, {
-      name: 'Clojure',
-      proficiency: 0.4,
-    }, {
-      name: 'C++',
+      name: 'C/C++',
       proficiency: 0.6,
     }, {
       name: 'HTML',
@@ -43,6 +40,12 @@ const DATA = {
       proficiency: 0.4,
     }, {
       name: 'CSS',
+      proficiency: 0.6,
+    }, {
+      name: 'Clojure',
+      proficiency: 0.4,
+    }, {
+      name: 'Assembly',
       proficiency: 0.6,
     }, {
       name: 'BASH',
@@ -56,7 +59,7 @@ const DATA = {
       'Angular',
       'Ember',
       'Sails',
-      'SCRUM',
+      'Scrum',
       'Mocha',
     ],
     libraries: [
@@ -64,6 +67,7 @@ const DATA = {
       'Ramda',
       'Immutable',
       'Chai',
+      'Basscss',
     ],
     tools: [
       'Unix CLI',
@@ -74,6 +78,7 @@ const DATA = {
       'Broccoli',
       'MongoDB',
       'Redis',
+      'Puppet',
     ],
     links: [{
       name: 'Phone',
@@ -96,8 +101,7 @@ const DATA = {
   main: {
     interests: [
       'Following technological advancements; scripting; digital art; Project Euler',
-      'Exploring the mysterious arts of the JavaScript ninja',
-      'Over-engineering resumes using React',
+      'Over-engineering resumes using React (GitHub: noodlemaster/resume-react)',
     ],
     companies: [{
       name: 'Rangle.io',
@@ -107,8 +111,9 @@ const DATA = {
         name: 'Sideboard',
         tools: ['ECMAScript 2015', 'Ramda', 'Immutable', 'Keen.io'],
         achievements: [
-          'Designed an algorithm to aggregate Cycle Times using PivotalTracker APIs',
-          'Coauthored a simple React + Redux front-end, and a Koa.js back-end',
+          'Built a Koa.js backend with Ramda to aggregate metrics from PivotalTracker APIs',
+          'Coauthored a React + Redux front-end; used Sass for style sheets',
+          'Authored the spam-url npm module to test back-end against request flooding',
         ],
       }, {
         name: 'Project Augury',
@@ -119,11 +124,12 @@ const DATA = {
         ],
       }, {
         name: 'Livefyre HTML Embed',
-        tools: ['ECMAScript 2015', 'DOM', 'SVG', 'Webpack'],
+        tools: ['ECMAScript 2015', 'Sass', 'DOM API', 'SVG', 'Webpack'],
         achievements: [
-          'Successfully led an architectural overhaul 3 weeks into 8 week long project',
-          'Implemented cross-browser SVG animations to minimize embed size',
-          'Collaborated with client engineers to find and fix faults in software',
+          'Implemented dependency-free cross-browser compatible SVG animations',
+          'Worked with client engineers to find and fix faults in software',
+          'Successfully led efforts to overhaul the app\'s architecture midway into project',
+          'Unit Tested with Mocha + Chai; used Istanbul to ensure ~90% coverage',
         ],
       }],
     }, {
@@ -134,9 +140,9 @@ const DATA = {
         name: 'SalesTree',
         tools: ['ECMAScript 2015', 'Angular', 'Broccoli', 'Gulp', 'Bootstrap'],
         achievements: [
-          'Helped implement a responsive tablet interface using Bootstrap, and LESS',
+          'Helped implement a responsive UI with Angular, Bootstrap, and LESS',
           'Created services to monitor user activities and log client-side errors server-side',
-          'Recreated client-side build infrastructure using Broccoli, cutting rebuild times by more than 75%',
+          'Recreated client-side build infrastructure using Broccoli, cutting app rebuild time by more than 75%',
         ],
       }],
     }, {
@@ -145,22 +151,23 @@ const DATA = {
       color: 'rgb(77, 100, 141)',
       achievements: [
         'Built and provisioned Vagrant development environments for four projects',
-        'Halved load times on the Premier\'s website by implementing query caching',
-        'Refactored authentication on a legacy PHP app, switching from MD5 to BCrypt',
+        'Setup exhaustive caching on the Premier\'s website to more than halve load times',
+        'Refactored authentication on a legacy PHP app; utilized BCrypt and MySQL',
       ],
     }],
     projects: [{
       name: 'LOLQueen - League of Legends',
-      tools: ['Redux', 'Radium', 'Immutable', 'BASSCSS', 'Ramda'],
-      link: 'http://lolqueen.net',
+      tools: ['Redux', 'Radium', 'Immutable', 'Basscss', 'Ramda', 'Redis'],
+      links: ['http://lolqueen.net', 'https://github.com/LOLQueen'],
+      github: 'https://github.com/LOLQueen',
       achievements: [
-        'Authored utilities to query RIOT\'s APIs that seamlessly handle rate limiting',
+        'Authored utilities to query RIOT APIs, which seamlessly handle rate limiting',
         'Built a React + Redux front-end to display Summoner match history',
       ],
     }, {
       name: 'CVAS - HTML5 Canvas Hack',
       tools: ['Socket.io', 'Express'],
-      link: 'http://cvas.herokuapp.com',
+      links: ['http://cvas.herokuapp.com'],
       achievements: [
         'Used message passing to keep canvas state efficiently in sync between users',
       ],

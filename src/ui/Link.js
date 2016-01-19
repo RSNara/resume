@@ -1,8 +1,11 @@
 import React, { PropTypes } from 'react';
 
-const Link = ({ to, children }) => {
+const Link = ({ to, children, style }) => {
   return (
-    <a href={to} style={style}>
+    <a href={to} style={{
+      ...defaultStyle,
+      ...style,
+    }}>
       {children}
     </a>
   );
@@ -11,9 +14,10 @@ const Link = ({ to, children }) => {
 Link.propTypes = {
   children: PropTypes.node,
   to: PropTypes.string.isRequired,
+  style: PropTypes.object,
 };
 
-const style = {
+const defaultStyle = {
   padding: '0 0 0 0.5rem',
   textDecoration: 'none',
 };

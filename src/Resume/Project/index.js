@@ -1,9 +1,12 @@
 import React, { PropTypes } from 'react';
 import List from '../../ui/List';
+import ProjectLinks from './ProjectLinks';
 import ProjectHeading from './ProjectHeading';
 
-const Project = ({ name, tools, link, achievements }) => {
-  const items = link ? [...achievements, createLink(link)] : achievements;
+const Project = ({ name, tools, links = [], achievements }) => {
+  const items = isEmpty(links) ? achievements : [
+    ...achievements, <ProjectLinks data={links} />,
+  ];
   return (
     <div style={style.main}>
       <ProjectHeading name={name} tools={tools} />
@@ -12,8 +15,8 @@ const Project = ({ name, tools, link, achievements }) => {
   );
 };
 
-function createLink(link) {
-  return `Link: ${link}`;
+function isEmpty(array) {
+  return array.length === 0;
 }
 
 const style = {
@@ -28,7 +31,8 @@ const style = {
 Project.propTypes = {
   name: PropTypes.string.isRequired,
   tools: PropTypes.arrayOf(PropTypes.string).isRequired,
-  achievements: PropTypes.arrayOf(PropTypes.string).isRequired,
+  achievements: PropTypes.array.isRequired,
+  links: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Project;
