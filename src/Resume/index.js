@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Container from '../ui/Container';
 import Sidebar from './Sidebar';
 import Main from './Main';
+import Link from '../ui/Link';
 
 class Resume extends Component {
   render() {
@@ -90,8 +91,8 @@ const DATA = {
       link: 'mailto:rsnara@uwaterloo.ca',
     }, {
       name: 'CodePen',
-      display: 'rsnara',
-      link: 'http://codepen.io',
+      display: 'codepen.io/rsnara',
+      link: 'http://codepen.io/rsnara',
     }, {
       name: 'GitHub',
       display: 'noodlemaster',
@@ -100,8 +101,8 @@ const DATA = {
   },
   main: {
     interests: [
-      'Following technological advancements; scripting; digital art; Project Euler',
-      'Over-engineering resumes using React (ex: noodlemaster/resume-react)',
+      'Studying Clojure, while learning the secret ways of the JavaScript ninja',
+      <span>Over-engineering resumes using React.js (GitHub:<Link to="http://github.com/noodlemaster/resume-react">noodlemaster/resume-react</Link>)</span>,
     ],
     companies: [{
       name: 'Rangle.io',
@@ -111,8 +112,8 @@ const DATA = {
         name: 'Sideboard',
         tools: ['ECMAScript 2015', 'Ramda', 'Immutable', 'Keen.io'],
         achievements: [
-          'Built a Koa.js backend with Ramda to aggregate metrics from PivotalTracker APIs',
-          'Coauthored a React + Redux front-end; used Sass for style sheets',
+          'Built a Koa.js back-end with Ramda to aggregate metrics from PivotalTracker APIs',
+          'Coauthored a React + Redux front-end; used Sass for styling',
           'Authored the spam-url npm module to test back-end against request flooding',
         ],
       }, {
