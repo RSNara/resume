@@ -16,7 +16,7 @@ const Identity = ({ name, program }) => {
 
 const style = {
   main: {
-    marginBottom: '1.5rem',
+    marginBottom: '3rem',
   },
   h1: {
     textAlign: 'center',
