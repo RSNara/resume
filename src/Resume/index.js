@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Container from '../ui/Container';
 import Sidebar from './Sidebar';
 import Main from './Main';
-import Link from '../ui/Link';
 
 class Resume extends Component {
   render() {
@@ -101,8 +100,8 @@ const DATA = {
   },
   main: {
     interests: [
-      'Studying Clojure, while learning the secret ways of the JavaScript ninja',
-      <span>Over-engineering resumes using React.js (GitHub:<Link to="http://github.com/noodlemaster/resume-react">noodlemaster/resume-react</Link>)</span>,
+      'Following technological advancements; scripting; digital art; Project Euler',
+      'Over-engineering resumes using React.js',
     ],
     companies: [{
       name: 'Rangle.io',
