@@ -111,7 +111,7 @@ const DATA = {
         name: 'Sideboard',
         tools: ['ECMAScript 2015', 'Ramda', 'Immutable', 'Keen.io'],
         achievements: [
-          'Built a Koa.js back-end with Ramda to aggregate metrics from PivotalTracker APIs',
+          'Built a Koa.js back-end to aggregate metrics from PivotalTracker APIs',
           'Coauthored a React + Redux front-end; used Sass for styling',
           'Authored the spam-url npm module to test back-end against request flooding',
         ],
