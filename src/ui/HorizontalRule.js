@@ -6,7 +6,7 @@ const HorizontalRule = () => (
 
 const style = {
   border: 'none',
-  height: '2px',
+  height: '1px',
   backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0))',
 };
 

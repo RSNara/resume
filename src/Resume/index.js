@@ -94,8 +94,8 @@ const DATA = {
       link: 'http://codepen.io/rsnara',
     }, {
       name: 'GitHub',
-      display: 'noodlemaster',
-      link: 'https://github.com/noodlemaster',
+      display: 'rsnara',
+      link: 'https://github.com/rsnara',
     }],
   },
   main: {
@@ -111,8 +111,8 @@ const DATA = {
         name: 'Sideboard',
         tools: ['ECMAScript 2015', 'Ramda', 'Immutable', 'Keen.io'],
         achievements: [
-          'Built a Koa.js back-end to aggregate metrics from PivotalTracker APIs',
-          'Coauthored a React + Redux front-end; used Sass for styling',
+          'Wrote a back-end using Koa to aggregate metrics from PivotalTracker APIs',
+          'Coauthored a React + Redux front-end; styled it using Sass',
           'Authored the spam-url npm module to test back-end against request flooding',
         ],
       }, {
@@ -126,9 +126,7 @@ const DATA = {
         name: 'Livefyre HTML Embed',
         tools: ['ECMAScript 2015', 'Sass', 'DOM API', 'SVG', 'Webpack'],
         achievements: [
-          'Implemented dependency-free cross-browser compatible SVG animations',
-          'Worked with client engineers to find and fix faults in software',
-          'Successfully led efforts to overhaul the app\'s architecture midway into project',
+          'Implemented cross-browser compatible SVG animations',
           'Unit Tested with Mocha + Chai; used Istanbul to ensure ~90% coverage',
         ],
       }],
@@ -140,7 +138,7 @@ const DATA = {
         name: 'SalesTree',
         tools: ['ECMAScript 2015', 'Angular', 'Broccoli', 'Gulp', 'Bootstrap'],
         achievements: [
-          'Helped implement a responsive UI with Angular, Bootstrap, and LESS',
+          'Developed a responsive tablet UI with Angular, Bootstrap, and LESS',
           'Created services to monitor user activities and log client-side errors server-side',
           'Recreated client-side build infrastructure using Broccoli, cutting app rebuild time by more than 75%',
         ],
@@ -150,9 +148,9 @@ const DATA = {
       title: 'Interactive Developer',
       color: 'rgb(77, 100, 141)',
       achievements: [
-        'Built and provisioned Vagrant development environments for four projects',
-        'Setup exhaustive caching on the Premier\'s website to more than halve load times',
-        'Refactored authentication on a legacy PHP app; utilized BCrypt and MySQL',
+        'Setup exhaustive caching on the Premier\'s website, reducing load times by 50%',
+        'Reimplemented the back-end for the Orientation website',
+        'Wrote configuration scripts using Packer and Puppet to auto-generate VMs for various production apps',
       ],
     }],
     projects: [{
