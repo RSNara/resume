@@ -1,13 +1,38 @@
 import React, { PropTypes } from 'react';
+import { Icon } from 'react-fa';
+import Radium from 'radium';
 
-const ProjectHeading = ({ name, tools }) => (
-  <div style={style.main}>
-    <div style={style.name}>{name}</div>
-    <div style={style.tools}>
-      {tools.join(', ')}
+const ProjectHeading = ({
+  name,
+  tools,
+  github,
+}) => {
+  return (
+    <div style={style.main}>
+      <ProjectName github={github} name={name} />
+      <div style={style.tools}>
+        {tools.join(', ')}
+      </div>
     </div>
-  </div>
-);
+  );
+};
+
+const ProjectName = ({ github, name }) => {
+  if (github) {
+    return (
+      <a href={github} style={style.name}>
+        <Icon name="github" style={{ paddingRight: '0.5rem' }}/>
+        {name}
+      </a>
+    );
+  }
+
+  return (
+    <div style={style.name}>
+      {name}
+    </div>
+  );
+};
 
 const style = {
   main: {
@@ -19,6 +44,9 @@ const style = {
   name: {
     fontSize: '1rem',
     fontWeight: 'bold',
+    display: 'flex',
+    alignItems: 'center',
+    textDecoration: 'none',
   },
   tools: {
     fontSize: '0.75rem',
@@ -32,4 +60,4 @@ ProjectHeading.propTypes = {
   tools: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default ProjectHeading;
+export default Radium(ProjectHeading);

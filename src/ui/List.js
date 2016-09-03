@@ -7,7 +7,7 @@ const List = ({ items, style }) => (
   }}>
     {items.map((item, key) => (
       <li key={key}>
-        { item }
+        {item}
       </li>
     ))}
   </ul>

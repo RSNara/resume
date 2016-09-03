@@ -30,6 +30,9 @@ const DATA = {
       name: 'JavaScript',
       proficiency: 0.8,
     }, {
+      name: 'Java',
+      proficiency: 0.6,
+    }, {
       name: 'C/C++',
       proficiency: 0.6,
     }, {
@@ -37,13 +40,13 @@ const DATA = {
       proficiency: 0.75,
     }, {
       name: 'PHP',
-      proficiency: 0.4,
+      proficiency: 0.25,
     }, {
       name: 'CSS',
       proficiency: 0.6,
     }, {
       name: 'Clojure',
-      proficiency: 0.4,
+      proficiency: 0.7,
     }, {
       name: 'Assembly',
       proficiency: 0.6,
@@ -71,7 +74,6 @@ const DATA = {
     ],
     tools: [
       'Unix CLI',
-      'PivotalTracker',
       'Git',
       'Webpack',
       'MongoDB',
@@ -89,10 +91,6 @@ const DATA = {
       display: 'rsnara@uwaterloo.ca',
       link: 'mailto:rsnara@uwaterloo.ca',
     }, {
-      name: 'CodePen',
-      display: 'codepen.io/rsnara',
-      link: 'http://codepen.io/rsnara',
-    }, {
       name: 'GitHub',
       display: 'rsnara',
       link: 'https://github.com/rsnara',
@@ -108,18 +106,39 @@ const DATA = {
       color: 'rgb(77, 100, 141)',
       title: 'Full Stack JavaScript Developer',
       projects: [{
+        name: 'Atlas',
+        tools: ['ECMAScript 2015', 'Ramda', 'Basscss'],
+        achievements: [
+          'Helped migrate an Angular 1.4 application into a React + Redux codebase',
+          'Built a tool to give managers visibility on employee vacations',
+          'Integrated a skills survey form to help managers make better staffing decisions',
+        ],
+      }, {
+        name: 'Mercatus',
+        tools: ['Angular 1.5', 'Jasmine', 'LESS'],
+        achievements: [
+          'Worked with a team of 6 client developers on a white-label web product',
+          'Helped migrate the app from an MVC to a component oriented architecture',
+          'Refactored and thoroughly tested the existing faceted search implementation',
+          'Built a search facet, enabling shoppers to filter search results by their interests',
+        ],
+      }],
+    }, {
+      name: 'Rangle.io',
+      color: 'rgb(77, 100, 141)',
+      title: 'Full Stack JavaScript Developer',
+      projects: [{
         name: 'Sideboard',
         tools: ['ECMAScript 2015', 'Ramda', 'Immutable', 'Keen.io'],
         achievements: [
-          'Wrote a back-end using Koa to aggregate metrics from PivotalTracker APIs',
-          'Coauthored a React + Redux front-end; styled it using Sass',
-          'Authored the spam-url npm module to test back-end against request flooding',
+          'Built a Koa.js back-end to aggregate metrics from PivotalTracker APIs',
+          'Coauthored a React + Redux front-end, and styled it using Sass',
         ],
       }, {
-        name: 'Project Augury',
+        name: 'Atlas Old',
         tools: ['TypeScript', 'Express', 'Mocha', 'Chai'],
         achievements: [
-          'Used ResourceGuru APIs to implement Rangle.io\'s Vacation Request Form',
+          'Used ResourceGuru APIs to implement Rangle.io\'s vacation request form',
           'Decoupled, tested, and modularized spaghetti server code',
         ],
       }, {
@@ -127,7 +146,7 @@ const DATA = {
         tools: ['ECMAScript 2015', 'Sass', 'DOM API', 'SVG', 'Webpack'],
         achievements: [
           'Implemented cross-browser compatible SVG animations',
-          'Unit Tested with Mocha + Chai; used Istanbul to ensure ~90% coverage',
+          'Unit tested code with Mocha + Chai, ensuring ~90% branch coverage',
         ],
       }],
     }, {
@@ -138,36 +157,40 @@ const DATA = {
         name: 'SalesTree',
         tools: ['ECMAScript 2015', 'Angular', 'Broccoli', 'Gulp', 'Bootstrap'],
         achievements: [
-          'Developed a responsive tablet UI with Angular, Bootstrap, and LESS',
           'Created services to monitor user activities and log client-side errors server-side',
-          'Recreated client-side build infrastructure using Broccoli, cutting app rebuild time by more than 75%',
+          'Refactored client-side build infrastructure to reduce rebuild times by 75%+',
         ],
       }],
     }, {
       name: 'Ontario Ministry of Govt. Services',
       title: 'Interactive Developer',
       color: 'rgb(77, 100, 141)',
-      achievements: [
-        'Setup exhaustive caching on the Premier\'s website, reducing load times by 50%',
-        'Reimplemented the back-end for the Orientation website',
-        'Wrote configuration scripts using Packer and Puppet to auto-generate VMs for various production apps',
-      ],
+      projects: [{
+        name: 'Projects:',
+        achievements: [
+          'Setup exhaustive caching on the Premier\'s website to halve load times',
+          'Re-implemented the shoddy authentication logic of a legacy PHP app',
+          'Wrote Packer and Puppet configuration scripts, used to auto-build VM images',
+        ],
+      }],
     }],
     projects: [{
-      name: 'LOLQueen - League of Legends',
-      tools: ['Redux', 'Radium', 'Immutable', 'Basscss', 'Ramda', 'Redis'],
-      links: ['http://lolqueen.net', 'https://github.com/LOLQueen'],
-      github: 'https://github.com/LOLQueen',
+      name: 'GLISP - The G LISP interpreter',
+      tools: ['ECMAScript 2015', 'Immutable', 'AVA', 'Ramda', 'Rollup'],
+      links: [],
+      github: 'https://github.com/rsnara/glisp',
       achievements: [
-        'Authored utilities to query RIOT APIs, which seamlessly handle rate limiting',
-        'Built a React + Redux front-end to display Summoner match history',
+        'A feature-rich, and isomorphic LISP implementation built with JavaScript',
+        'Built in immutable data structures, JS interop, destructuring, and macros',
       ],
     }, {
-      name: 'CVAS - HTML5 Canvas Hack',
-      tools: ['Socket.io', 'Express'],
-      links: ['http://cvas.herokuapp.com'],
+      name: 'Reddit Client',
+      tools: ['Reddit API', 'React', 'Redux', 'redux-saga', 'reselect'],
+      links: ['https://rc-rsnara.herokuapp.com/r/pics/hot'],
+      github: 'https://github.com/rsnara/reddit-client',
       achievements: [
-        'Used message passing to keep canvas state efficiently in sync between users',
+        'A shameless Reddit clone built to experiment with the redux architecture',
+        'Created a reddit-style comment tree, image previews, subreddits, and more',
       ],
     }],
   },

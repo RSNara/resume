@@ -3,13 +3,19 @@ import List from '../../ui/List';
 import ProjectLinks from './ProjectLinks';
 import ProjectHeading from './ProjectHeading';
 
-const Project = ({ name, tools, links = [], achievements }) => {
+const Project = ({
+  name = '',
+  tools = [],
+  links = [],
+  github,
+  achievements,
+}) => {
   const items = isEmpty(links) ? achievements : [
     ...achievements, <ProjectLinks data={links} />,
   ];
   return (
     <div style={style.main}>
-      <ProjectHeading name={name} tools={tools} />
+      <ProjectHeading name={name} tools={tools} github={github}/>
       <List items={items} style={style.list}/>
     </div>
   );
@@ -25,12 +31,14 @@ const style = {
   },
   list: {
     margin: 0,
+    paddingLeft: '2rem',
   },
 };
 
 Project.propTypes = {
-  name: PropTypes.string.isRequired,
-  tools: PropTypes.arrayOf(PropTypes.string).isRequired,
+  name: PropTypes.string,
+  github: PropTypes.string,
+  tools: PropTypes.arrayOf(PropTypes.string),
   achievements: PropTypes.array.isRequired,
   links: PropTypes.arrayOf(PropTypes.string),
 };
