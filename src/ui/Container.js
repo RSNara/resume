@@ -11,7 +11,7 @@ Container.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-const width = 1024;
+const width = 1100;
 const height = 11 / 8.5 * width;
 
 const style = {

@@ -1,31 +1,50 @@
 import React, { PropTypes } from 'react';
-import Companies from './Companies';
 import MainHeading from './MainHeading';
 import Project from './Project';
 import Section from '../ui/Section';
-import List from '../ui/List';
+import * as Constant from '../constant';
 
 // http://paletton.com/#uid=13I0u0kllllaFw0g0qFqFg0w0aF
 
-const Main = ({ companies, projects, interests }) => (
+const Main = ({ companies, projects }) => (
   <section style={style.main}>
     <MainHeading title="Work Experience" />
-    <Companies data={companies} />
+    {
+      companies.map((company, i) => {
+        return (
+          <Section heading={company.name} subheading={company.title} color={Constant.COLORS.PRIMARY().toString()} key={i}>
+            {
+              (company.projects || []).map((project, j) => {
+                return (
+                  <Project
+                    name={project.name}
+                    tools={project.tools}
+                    achievements={project.achievements}
+                    links={project.links}
+                    github={project.github}
+                    key={j}
+                  />
+                );
+              })
+            }
+          </Section>
+        );
+      })
+    }
     <MainHeading title="Projects" />
-      {projects.map((project, key) => (
-        <Section color="rgb(77, 100, 141)" key={key}>
+    {
+      projects.map((project, i) => (
+        <Section color={Constant.COLORS.PRIMARY().toString()} key={i}>
           <Project
             name={project.name}
             tools={project.tools}
             achievements={project.achievements}
             links={project.links}
-            key={key} />
+            github={project.github}
+            />
         </Section>
-      ))}
-    <MainHeading title="Activities & Interests" />
-    <Section color="rgb(77, 100, 141)">
-      <List items={interests} />
-    </Section>
+      ))
+    }
   </section>
 );
 
@@ -38,7 +57,6 @@ const style = {
 Main.propTypes = {
   companies: PropTypes.arrayOf(PropTypes.object).isRequired,
   projects: PropTypes.arrayOf(PropTypes.object).isRequired,
-  interests: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Main;

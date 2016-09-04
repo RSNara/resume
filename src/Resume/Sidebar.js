@@ -5,6 +5,7 @@ import SidebarList from './SidebarList';
 import ContactLinks from './ContactLinks';
 import HorizontalRule from '../ui/HorizontalRule';
 import Education from './Education';
+import * as Constant from '../constant';
 
 const Sidebar = ({ data }) => (
   <section style={style.main}>
@@ -30,7 +31,7 @@ const Sidebar = ({ data }) => (
 const style = {
   main: {
     width: '27.5%',
-    backgroundColor: 'rgba(118,136,169,0.125)',
+    backgroundColor: Constant.COLORS.SECONDARY().lighten(30),
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
