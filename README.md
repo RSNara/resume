@@ -1,5 +1,5 @@
 # Resume
-This is my 3A Resume written in [React](https://github.com/facebook/react)!
+This is my 3B Resume written in [React](https://github.com/facebook/react)!
 
 ## Architecture
 This resume is designed using a component-oriented architecture, which is why React is used. That said, other libraries like [Ember](https://github.com/emberjs/ember.js), [Angular](https://github.com/angular/angular.js), and [Polymer](https://github.com/Polymer/polymer) are perfectly good alternatives. Why I chose React was simply because it was easiest for me to work with.
