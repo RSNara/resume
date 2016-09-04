@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import MainHeading from './MainHeading';
 import Project from './Project';
 import Section from '../ui/Section';
+import * as Constant from '../constant';
 
 // http://paletton.com/#uid=13I0u0kllllaFw0g0qFqFg0w0aF
 
@@ -11,7 +12,7 @@ const Main = ({ companies, projects }) => (
     {
       companies.map((company, i) => {
         return (
-          <Section heading={company.name} subheading={company.title} color={company.color} key={i}>
+          <Section heading={company.name} subheading={company.title} color={Constant.COLORS.PRIMARY().toString()} key={i}>
             {
               (company.projects || []).map((project, j) => {
                 return (
@@ -33,7 +34,7 @@ const Main = ({ companies, projects }) => (
     <MainHeading title="Projects" />
     {
       projects.map((project, i) => (
-        <Section color="rgb(77, 100, 141)" key={i}>
+        <Section color={Constant.COLORS.PRIMARY().toString()} key={i}>
           <Project
             name={project.name}
             tools={project.tools}

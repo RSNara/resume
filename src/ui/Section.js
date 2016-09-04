@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import tinycolor from 'tinycolor2';
 
 const Section = ({
   color,
@@ -8,7 +9,9 @@ const Section = ({
 }) => {
   const display = heading && subheading ? 'block' : 'none';
   return (
-    <div>
+    <div style={{
+      paddingBottom: '1rem',
+    }}>
       <div style={{ display }}>
         <div style={{
           ...defaultStyles.main,
@@ -25,8 +28,7 @@ const Section = ({
       <div style={{
         borderTop: '0.1px solid ' + color,
         borderLeft: '0.5rem solid ' + color,
-        backgroundColor: 'rgba(118, 136, 169, 0.05)',
-        marginBottom: '1rem',
+        backgroundColor: tinycolor(color).lighten(56),
         padding: '0.025rem 1.2rem',
       }}>
         {children}
@@ -51,7 +53,7 @@ const defaultStyles = {
   },
   subheading: {
     fontSize: '1rem',
-    color: 'rgba(255,255,255,0.75)',
+    color: 'rgba(255,255,255,0.85)',
     padding: '0.25rem',
   },
 };

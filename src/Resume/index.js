@@ -18,7 +18,7 @@ const DATA = {
   sidebar: {
     name: 'Ramanpreet Nara',
     program: {
-      term: '3A',
+      term: '3B',
       nickname: 'Software Engineering',
       name: 'Software Engineering',
     },
@@ -103,33 +103,30 @@ const DATA = {
     ],
     companies: [{
       name: 'Rangle.io',
-      color: 'rgb(77, 100, 141)',
       title: 'Full Stack JavaScript Developer',
       projects: [{
         name: 'Atlas',
-        tools: ['ECMAScript 2015', 'Ramda', 'Basscss'],
+        tools: ['React', 'Angular', 'Koa', 'Redux', 'Ramda', 'Basscss'],
         achievements: [
-          'Helped migrate an Angular 1.4 application into a React + Redux codebase',
-          'Built a tool to give managers visibility on employee vacations',
-          'Integrated a skills survey form to help managers make better staffing decisions',
+          'Migrated an Angular 1.4 application into a React + Redux codebase',
+          'Built the TimeOff tool to give managers clarity on past employee vacations',
+          'Added a skills survey form to help managers make staffing decisions',
         ],
       }, {
         name: 'Mercatus',
-        tools: ['Angular 1.5', 'Jasmine', 'LESS'],
+        tools: ['Angular', 'Jasmine', 'LESS'],
         achievements: [
-          'Worked with a team of 6 client developers on a white-label web product',
+          'Worked with a team of 6 client developers on a white-label product',
           'Helped migrate the app from an MVC to a component oriented architecture',
-          'Refactored and thoroughly tested the existing faceted search implementation',
-          'Built a search facet, enabling shoppers to filter search results by their interests',
+          'Refactored, and thoroughly tested the faceted search implementation',
         ],
       }],
     }, {
       name: 'Rangle.io',
-      color: 'rgb(77, 100, 141)',
       title: 'Full Stack JavaScript Developer',
       projects: [{
         name: 'Sideboard',
-        tools: ['ECMAScript 2015', 'Ramda', 'Immutable', 'Keen.io'],
+        tools: ['React', 'Ramda', 'Immutable', 'Keen.io'],
         achievements: [
           'Built a Koa.js back-end to aggregate metrics from PivotalTracker APIs',
           'Coauthored a React + Redux front-end, and styled it using Sass',
@@ -143,7 +140,7 @@ const DATA = {
         ],
       }, {
         name: 'Livefyre HTML Embed',
-        tools: ['ECMAScript 2015', 'Sass', 'DOM API', 'SVG', 'Webpack'],
+        tools: ['JavaScript', 'Sass', 'DOM API', 'SVG', 'Webpack'],
         achievements: [
           'Implemented cross-browser compatible SVG animations',
           'Unit tested code with Mocha + Chai, ensuring ~90% branch coverage',
@@ -152,10 +149,9 @@ const DATA = {
     }, {
       name: 'Ntree',
       title: 'Angular JS Developer',
-      color: 'rgb(77, 100, 141)',
       projects: [{
         name: 'SalesTree',
-        tools: ['ECMAScript 2015', 'Angular', 'Broccoli', 'Gulp', 'Bootstrap'],
+        tools: ['JavaScript', 'Angular', 'Broccoli', 'Gulp'],
         achievements: [
           'Created services to monitor user activities and log client-side errors server-side',
           'Refactored client-side build infrastructure to reduce rebuild times by 75%+',
@@ -164,19 +160,19 @@ const DATA = {
     }, {
       name: 'Ontario Ministry of Govt. Services',
       title: 'Interactive Developer',
-      color: 'rgb(77, 100, 141)',
       projects: [{
         name: 'Projects:',
+        tools: ['PHP', 'MySQL', 'Puppet', 'Symfony 2'],
         achievements: [
           'Setup exhaustive caching on the Premier\'s website to halve load times',
           'Re-implemented the shoddy authentication logic of a legacy PHP app',
-          'Wrote Packer and Puppet configuration scripts, used to auto-build VM images',
+          'Wrote Packer and Puppet configuration scripts to build Vagrant images',
         ],
       }],
     }],
     projects: [{
       name: 'GLISP - The G LISP interpreter',
-      tools: ['ECMAScript 2015', 'Immutable', 'AVA', 'Ramda', 'Rollup'],
+      tools: ['JavaScript', 'Immutable', 'AVA', 'Ramda', 'Rollup'],
       links: [],
       github: 'https://github.com/rsnara/glisp',
       achievements: [

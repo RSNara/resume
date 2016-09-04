@@ -4,13 +4,15 @@ import ContactLink from './ContactLink';
 const ContactLinks = ({ data: links }) => (
   <section style={style.main}>
     <h1 style={style.heading}>Links</h1>
-    {links.map((link, key) => (
-      <ContactLink
-        display={link.display}
-        key={key}
-        link={link.link}
-        name={link.name} />
-    ))}
+    {
+      links.map((link, key) => (
+        <ContactLink
+          display={link.display}
+          key={key}
+          link={link.link}
+          name={link.name}/>
+      ))
+    }
   </section>
 );
 

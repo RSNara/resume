@@ -6,9 +6,8 @@ const MainHeading = ({ title }) => (
 
 const style = {
   main: {
-    margin: '0 0 1rem 0',
+    padding: '0.25rem 0.25rem 1.25rem 0.25rem',
     color: 'rgb(5, 24, 56)',
-    padding: '0.25rem',
   },
 };
 
