@@ -106,19 +106,19 @@ const DATA = {
       title: 'Full Stack JavaScript Developer',
       projects: [{
         name: 'Atlas',
-        tools: ['React', 'Angular', 'Koa', 'Redux', 'Ramda', 'Basscss'],
+        tools: ['React', 'Angular 1.4', 'Koa', 'Redux', 'Ramda', 'Basscss'],
         achievements: [
-          'Migrated an Angular 1.4 application into a React + Redux codebase',
-          'Built the TimeOff tool to give managers clarity on past employee vacations',
-          'Added a skills survey form to help managers make staffing decisions',
+          'Migrated an Angular + TypeScript application into a React + Redux codebase',
+          'Built the TimeOff tool to show managers employee vacation metrics',
+          'Implemented a skills survey form to help managers make informed staffing decisions',
         ],
       }, {
         name: 'Mercatus',
-        tools: ['Angular', 'Jasmine', 'LESS'],
+        tools: ['Angular 1.5', 'Jasmine', 'LESS'],
         achievements: [
-          'Worked with a team of 6 client developers on a white-label product',
-          'Helped migrate the app from an MVC to a component oriented architecture',
-          'Refactored, and thoroughly tested the faceted search implementation',
+          'Worked in a team of 6 client developers over two months on a white-label product',
+          'Helped migrate the Angular 1.5 app from an MVC to a component oriented architecture',
+          'Refactored, and thoroughly tested the faceted search (front-end) implementation',
         ],
       }],
     }, {
@@ -129,11 +129,11 @@ const DATA = {
         tools: ['React', 'Ramda', 'Immutable', 'Keen.io'],
         achievements: [
           'Built a Koa.js back-end to aggregate metrics from PivotalTracker APIs',
-          'Coauthored a React + Redux front-end, and styled it using Sass',
+          'Coauthored a React + Redux front-end to display metrics, and styled it with Sass',
         ],
       }, {
         name: 'Atlas Old',
-        tools: ['TypeScript', 'Express', 'Mocha', 'Chai'],
+        tools: ['Angular 1.4', 'TypeScript', 'Express', 'Mocha', 'Chai'],
         achievements: [
           'Used ResourceGuru APIs to implement Rangle.io\'s vacation request form',
           'Decoupled, tested, and modularized spaghetti server code',
@@ -142,7 +142,7 @@ const DATA = {
         name: 'Livefyre HTML Embed',
         tools: ['JavaScript', 'Sass', 'DOM API', 'SVG', 'Webpack'],
         achievements: [
-          'Implemented cross-browser compatible SVG animations',
+          'Implemented dependency-free cross-browser compatible SVG animations',
           'Unit tested code with Mocha + Chai, ensuring ~90% branch coverage',
         ],
       }],
@@ -164,9 +164,9 @@ const DATA = {
         name: 'Projects:',
         tools: ['PHP', 'MySQL', 'Puppet', 'Symfony 2'],
         achievements: [
-          'Setup exhaustive caching on the Premier\'s website to halve load times',
-          'Re-implemented the shoddy authentication logic of a legacy PHP app',
-          'Wrote Packer and Puppet configuration scripts to build Vagrant images',
+          'Setup exhaustive caching on the Premier\'s website to halve page load times',
+          'Removed security holes in the shoddy auth. implementation of a legacy PHP app',
+          'Authored Packer and Puppet scripts to automatically build VM images for 4 projects',
         ],
       }],
     }],
@@ -177,7 +177,7 @@ const DATA = {
       github: 'https://github.com/rsnara/glisp',
       achievements: [
         'A feature-rich, and isomorphic LISP implementation built with JavaScript',
-        'Built in immutable data structures, JS interop, destructuring, and macros',
+        'Supports immutable data structures, JS interop, destructuring, and macros',
       ],
     }, {
       name: 'Reddit Client',
