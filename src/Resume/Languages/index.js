@@ -6,7 +6,7 @@ const Languages = ({ data: languages }) => (
   <section style={style.main}>
     <SidebarHeading>Languages</SidebarHeading>
     <div>
-      {languages.map((language, index) => (
+      {sortLanguages(languages).map((language, index) => (
         <Language
           name={language.name}
           proficiency={language.proficiency}
@@ -21,6 +21,10 @@ const style = {
     margin: '1rem 0',
   },
 };
+
+function sortLanguages(langs) {
+  return langs.sort((a, b) => b.proficiency - a.proficiency);
+}
 
 Languages.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object).isRequired,

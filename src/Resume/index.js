@@ -24,7 +24,7 @@ const DATA = {
     },
     education: {
       university: 'University of Waterloo',
-      duration: 'Sept 13 - PRESENT',
+      duration: 'Sept. 13 - PRESENT',
     },
     languages: [{
       name: 'JavaScript',
@@ -154,7 +154,7 @@ const DATA = {
         tools: ['JavaScript', 'Angular', 'Broccoli', 'Gulp'],
         achievements: [
           'Created services to monitor user activities and log client-side errors server-side',
-          'Refactored client-side build infrastructure to reduce rebuild times by 75%+',
+          'Refactored client-side build infrastructure to reduce rebuild times by over 75%',
         ],
       }],
     }, {
@@ -164,8 +164,8 @@ const DATA = {
         name: 'Projects:',
         tools: ['PHP', 'MySQL', 'Puppet', 'Symfony 2'],
         achievements: [
-          'Setup exhaustive caching on the Premier\'s website to halve page load times',
-          'Removed security holes in the shoddy auth. implementation of a legacy PHP app',
+          'Improved caching, reducing page load times on the Premier\'s website\'s by over 50%',
+          'Refactored authentication in a legacy PHP app to remove security vulnerabilities',
           'Authored Packer and Puppet scripts to automatically build VM images for 4 projects',
         ],
       }],
@@ -185,7 +185,7 @@ const DATA = {
       links: ['https://rc-rsnara.herokuapp.com/r/pics/hot'],
       github: 'https://github.com/rsnara/reddit-client',
       achievements: [
-        'A shameless Reddit clone built to experiment with the redux architecture',
+        'A Reddit clone built to experiment with the redux architecture',
         'Created a reddit-style comment tree, image previews, subreddits, and more',
       ],
     }],

@@ -19,10 +19,10 @@ const style = {
     marginBottom: '3rem',
   },
   h1: {
-    textAlign: 'center',
+    textAlign: 'right',
   },
   h3: {
-    textAlign: 'center',
+    textAlign: 'right',
   },
 };
 
