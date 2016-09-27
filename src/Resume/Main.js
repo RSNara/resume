@@ -12,7 +12,7 @@ const Main = ({ companies, projects }) => (
     {
       companies.map((company, i) => {
         return (
-          <Section heading={company.name} subheading={company.title} color={Constant.COLORS.PRIMARY().toString()} key={i}>
+          <Section heading={`${company.name}`} subheading={`${company.title} | ${company.range}`} color={Constant.COLORS.PRIMARY().toString()} key={i}>
             {
               (company.projects || []).map((project, j) => {
                 return (
@@ -20,7 +20,7 @@ const Main = ({ companies, projects }) => (
                     name={project.name}
                     tools={project.tools}
                     achievements={project.achievements}
-                    links={project.links}
+                    demos={project.demos}
                     github={project.github}
                     key={j}
                   />
@@ -39,7 +39,7 @@ const Main = ({ companies, projects }) => (
             name={project.name}
             tools={project.tools}
             achievements={project.achievements}
-            links={project.links}
+            demos={project.demos}
             github={project.github}
             />
         </Section>

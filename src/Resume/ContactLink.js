@@ -1,12 +1,30 @@
 import React, { PropTypes } from 'react';
 import Link from '../ui/Link';
+import { Icon } from 'react-fa';
 
-const ContactLink = ({ display, link, name }) => (
-  <div style={style.main}>
-    <span style={style.name}>{name}: </span>
-    <Link to={link}>{display}</Link>
-  </div>
-);
+const ContactLink = ({
+  display,
+  name,
+  link,
+  icon,
+}) => {
+  return (
+    <div style={style.main}>
+      <span style={style.name}>{name}:</span>
+      <Link to={link}>
+        {display}
+      </Link>
+      {/* <div style={{
+        minWidth: '1.5rem',
+        display: 'flex',
+        justifyContent: 'center',
+        marginLeft: '0.5rem',
+        }}>
+        <Icon name={icon} size="lg"/>
+      </div> */}
+    </div>
+  );
+};
 
 const style = {
   main: {

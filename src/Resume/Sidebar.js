@@ -9,21 +9,23 @@ import * as Constant from '../constant';
 
 const Sidebar = ({ data }) => (
   <section style={style.main}>
-    <div>
-      <Identity name={data.name} program={data.program} />
-      <HorizontalRule />
-      <ContactLinks data={data.links} />
-      <HorizontalRule />
-      <Languages data={data.languages} />
-      <SidebarList title="Libraries" items={data.libraries} />
-      <SidebarList title="Frameworks" items={data.frameworks} />
-      <SidebarList title="Tools" items={data.tools} />
-      <HorizontalRule />
-    </div>
-    <div>
-      <Education
-        university={data.education.university}
-        duration={data.education.duration} />
+    <Identity name={data.name} program={data.program} />
+    <div style={style.info}>
+      <div>
+        {/* <HorizontalRule /> */}
+        <ContactLinks data={data.links} />
+        {/* <HorizontalRule /> */}
+        <Languages data={data.languages} />
+        <SidebarList title="Libraries" items={data.libraries} />
+        <SidebarList title="Frameworks" items={data.frameworks} />
+        <SidebarList title="Tools" items={data.tools} />
+        {/* <HorizontalRule /> */}
+      </div>
+      <div>
+        <Education
+          university={data.education.university}
+          duration={data.education.duration} />
+      </div>
     </div>
   </section>
 );
@@ -31,12 +33,17 @@ const Sidebar = ({ data }) => (
 const style = {
   main: {
     width: '27.5%',
-    backgroundColor: Constant.COLORS.SECONDARY().lighten(30),
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: Constant.COLORS.SECONDARY().lighten(20),
+    color: 'rgb(5, 24, 56)',
+  },
+  info: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     padding: '2rem',
-    color: 'rgb(5, 24, 56)',
+    flexGrow: '1',
   },
 };
 

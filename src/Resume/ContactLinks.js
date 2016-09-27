@@ -1,16 +1,19 @@
 import React, { PropTypes } from 'react';
 import ContactLink from './ContactLink';
+import SidebarHeading from './SidebarHeading';
 
 const ContactLinks = ({ data: links }) => (
   <section style={style.main}>
-    <h1 style={style.heading}>Links</h1>
+    <SidebarHeading>Contacts</SidebarHeading>
     {
       links.map((link, key) => (
         <ContactLink
           display={link.display}
           key={key}
           link={link.link}
-          name={link.name}/>
+          name={link.name}
+          icon={link.icon}
+        />
       ))
     }
   </section>
@@ -18,7 +21,7 @@ const ContactLinks = ({ data: links }) => (
 
 const style = {
   main: {
-    margin: '1.5rem 0',
+    // margin: '0 0 2rem',
   },
   heading: {
     textAlign: 'left',

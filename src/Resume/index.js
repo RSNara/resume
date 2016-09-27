@@ -36,14 +36,11 @@ const DATA = {
       name: 'C/C++',
       proficiency: 0.6,
     }, {
-      name: 'HTML',
+      name: 'HTML/CSS',
       proficiency: 0.75,
     }, {
       name: 'PHP',
-      proficiency: 0.25,
-    }, {
-      name: 'CSS',
-      proficiency: 0.6,
+      proficiency: 0.4,
     }, {
       name: 'Clojure',
       proficiency: 0.7,
@@ -52,18 +49,22 @@ const DATA = {
       proficiency: 0.6,
     }, {
       name: 'BASH',
+      proficiency: 0.4,
+    }, {
+      name: 'SQL',
       proficiency: 0.3,
     }],
     frameworks: [
       'Node.js',
       'Redux',
       'Express',
-      'Koa',
+      'Koa.js',
       'Angular',
       'Ember',
       'Sails',
       'Scrum',
       'Mocha',
+      'AVA',
     ],
     libraries: [
       'React',
@@ -71,6 +72,7 @@ const DATA = {
       'Immutable',
       'Chai',
       'Basscss',
+      'Lodash',
     ],
     tools: [
       'Unix CLI',
@@ -86,14 +88,17 @@ const DATA = {
       name: 'Phone',
       display: '1-647-609-4290',
       link: 'tel:+16576094290',
+      icon: 'mobile',
     }, {
       name: 'Email',
       display: 'rsnara@uwaterloo.ca',
       link: 'mailto:rsnara@uwaterloo.ca',
+      icon: 'envelope',
     }, {
       name: 'GitHub',
-      display: 'rsnara',
+      display: 'github.com/rsnara',
       link: 'https://github.com/rsnara',
+      icon: 'github',
     }],
   },
   main: {
@@ -104,26 +109,28 @@ const DATA = {
     companies: [{
       name: 'Rangle.io',
       title: 'Full Stack JavaScript Developer',
+      range: 'Spring 2016',
       projects: [{
         name: 'Atlas',
         tools: ['React', 'Angular 1.4', 'Koa', 'Redux', 'Ramda', 'Basscss'],
         achievements: [
-          'Migrated an Angular + TypeScript application into a React + Redux codebase',
-          'Built the TimeOff tool to show managers employee vacation metrics',
-          'Implemented a skills survey form to help managers make informed staffing decisions',
+          'Merged a TypeScript Angular MVC application into a React + Redux codebase',
+          'Crafted efficient methods to crunch 3000+ ResourceGuru bookings into vacation metrics',
+          'Developed REST APIs and a front-end to enable CRUD operations on developer skills',
         ],
       }, {
         name: 'Mercatus',
         tools: ['Angular 1.5', 'Jasmine', 'LESS'],
         achievements: [
-          'Worked in a team of 6 client developers over two months on a white-label product',
-          'Helped migrate the Angular 1.5 app from an MVC to a component oriented architecture',
-          'Refactored, and thoroughly tested the faceted search (front-end) implementation',
+          'Reinforced a team of 6 client devs (for 2 months) building a white-label e-commerce app',
+          'Helped migrate an MVC Angular web application to a component-oriented architecture',
+          'Refactored and tested the faceted search web front-end, ensuring 100% branch coverage',
         ],
       }],
     }, {
       name: 'Rangle.io',
       title: 'Full Stack JavaScript Developer',
+      range: 'Fall 2015',
       projects: [{
         name: 'Sideboard',
         tools: ['React', 'Ramda', 'Immutable', 'Keen.io'],
@@ -149,17 +156,19 @@ const DATA = {
     }, {
       name: 'Ntree',
       title: 'Angular JS Developer',
+      range: 'Winter 2015',
       projects: [{
         name: 'SalesTree',
         tools: ['JavaScript', 'Angular', 'Broccoli', 'Gulp'],
         achievements: [
-          'Created services to monitor user activities and log client-side errors server-side',
-          'Refactored client-side build infrastructure to reduce rebuild times by over 75%',
+          'Setup facilities to monitor user activities and save client-side errors server-side',
+          'Overhauled client-side build infrastructure to reduce rebuild times by over 75%',
         ],
       }],
     }, {
       name: 'Ontario Ministry of Govt. Services',
       title: 'Interactive Developer',
+      range: 'Spring 2014',
       projects: [{
         name: 'Projects:',
         tools: ['PHP', 'MySQL', 'Puppet', 'Symfony 2'],
@@ -173,20 +182,20 @@ const DATA = {
     projects: [{
       name: 'GLISP - The G LISP interpreter',
       tools: ['JavaScript', 'Immutable', 'AVA', 'Ramda', 'Rollup'],
-      links: [],
+      demos: [],
       github: 'https://github.com/rsnara/glisp',
       achievements: [
         'A feature-rich, and isomorphic LISP implementation built with JavaScript',
-        'Supports immutable data structures, JS interop, destructuring, and macros',
+        'Supports immutable data structures, JS interop, destructuring, macros, and exceptions',
       ],
     }, {
       name: 'Reddit Client',
       tools: ['Reddit API', 'React', 'Redux', 'redux-saga', 'reselect'],
-      links: ['https://rc-rsnara.herokuapp.com/r/pics/hot'],
+      demos: ['https://rc-rsnara.herokuapp.com/r/pics/hot'],
       github: 'https://github.com/rsnara/reddit-client',
       achievements: [
         'A Reddit clone built to experiment with the redux architecture',
-        'Created a reddit-style comment tree, image previews, subreddits, and more',
+        'Created a reddit-style comment tree, image previews, and multiple subreddits',
       ],
     }],
   },

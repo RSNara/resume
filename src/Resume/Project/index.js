@@ -1,17 +1,17 @@
 import React, { PropTypes } from 'react';
 import List from '../../ui/List';
-import ProjectLinks from './ProjectLinks';
+import ProjectDemos from './ProjectDemos';
 import ProjectHeading from './ProjectHeading';
 
 const Project = ({
   name = '',
   tools = [],
-  links = [],
+  demos = [],
   github,
   achievements,
 }) => {
-  const items = isEmpty(links) ? achievements : [
-    ...achievements, <ProjectLinks data={links} />,
+  const items = isEmpty(demos) ? achievements : [
+    ...achievements, <ProjectDemos data={demos} />,
   ];
   return (
     <div style={style.main}>
@@ -40,7 +40,7 @@ Project.propTypes = {
   github: PropTypes.string,
   tools: PropTypes.arrayOf(PropTypes.string),
   achievements: PropTypes.array.isRequired,
-  links: PropTypes.arrayOf(PropTypes.string),
+  demos: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Project;

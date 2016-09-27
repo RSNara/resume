@@ -44,17 +44,17 @@ const defaultStyles = {
     alignItems: 'center',
     paddingRight: '0.75rem',
     paddingLeft: '0.5rem',
+    paddingTop: '0.25rem',
+    paddingBottom: '0.25rem',
   },
   heading: {
     fontSize: '1.25rem',
     fontWeight: 'bold',
     color: 'white',
-    padding: '0.25rem',
   },
   subheading: {
-    fontSize: '1rem',
+    fontSize: '0.85rem',
     color: 'rgba(255,255,255,0.85)',
-    padding: '0.25rem',
   },
 };
 
