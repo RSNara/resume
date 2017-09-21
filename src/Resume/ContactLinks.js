@@ -4,7 +4,7 @@ import SidebarHeading from './SidebarHeading';
 
 const ContactLinks = ({ data: links }) => (
   <section style={style.main}>
-    <SidebarHeading>Contacts</SidebarHeading>
+    <SidebarHeading>Contact</SidebarHeading>
     {
       links.map((link, key) => (
         <ContactLink

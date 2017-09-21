@@ -11,15 +11,12 @@ Container.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-const width = 1100;
-const height = 11 / 8.5 * width;
-
 const style = {
-  width: `${width}px`,
-  height: `${height}px`,
+  width: '8.5in',
+  height: '11in',
   margin: '0 auto',
-  fontFamily: '\'Open Sans\', sans-serif',
   display: 'flex',
+  backgroundColor: 'white',
 };
 
 export default radium(Container);

@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import * as C from '../constant/index';
 
 const Identity = ({ name, program }) => {
   const { nickname, term } = program;
@@ -17,17 +16,19 @@ const Identity = ({ name, program }) => {
 
 const style = {
   main: {
-    padding: '2rem 2rem 2rem 0',
-    backgroundColor: C.COLORS.PRIMARY(),
-    color: 'white',
+    padding: '0 0 0.5rem 0',
+    marginBottom: '1rem',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-end',
   },
   h1: {
-    fontSize: '175%',
-    textAlign: 'right',
-    fontWeight: 'bolder',
+    fontSize: '2.5rem',
   },
   h3: {
-    textAlign: 'right',
+    fontSize: '1.75rem',
+    marginBottom: '0.5rem',
+    color: 'rgba(0,0,0,0.7)',
   },
 };
 

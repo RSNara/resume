@@ -11,6 +11,7 @@ const SidebarHeading = ({ children, align = 'right' }) => (
 
 const style = {
   padding: '0.25rem 0',
+  fontWeight: 'bold',
 };
 
 SidebarHeading.propTypes = {

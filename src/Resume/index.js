@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import Container from '../ui/Container';
 import Sidebar from './Sidebar';
 import Main from './Main';
+import CLJSLogo from './images/cljs.svg';
+import JSLogo from './images/js.svg';
+import HackLogo from './images/hack.svg';
+import HTMLLogo from './images/html.svg';
+import CSSLogo from './images/css.svg';
+import JavaLogo from './images/java.svg';
+import CPPLogo from './images/cpp.svg';
+import SQLLogo from './images/postgres.svg';
 
 class Resume extends Component {
   render() {
@@ -16,12 +24,6 @@ class Resume extends Component {
 
 const DATA = {
   sidebar: {
-    name: 'Ramanpreet Nara',
-    program: {
-      term: '3B',
-      nickname: 'Software Engineering',
-      name: 'Software Engineering',
-    },
     education: {
       university: 'University of Waterloo',
       duration: 'Sept. 13 - PRESENT',
@@ -29,50 +31,54 @@ const DATA = {
     languages: [{
       name: 'JavaScript',
       proficiency: 0.8,
+      logo: JSLogo,
     }, {
       name: 'Java',
       proficiency: 0.6,
+      logo: JavaLogo,
     }, {
-      name: 'C/C++',
+      name: 'C++',
       proficiency: 0.6,
+      logo: CPPLogo,
     }, {
-      name: 'HTML/CSS',
-      proficiency: 0.75,
+      name: 'HTML',
+      proficiency: 0.65,
+      logo: HTMLLogo,
     }, {
-      name: 'PHP',
-      proficiency: 0.4,
+      name: 'CSS',
+      proficiency: 0.65,
+      logo: CSSLogo,
     }, {
-      name: 'Clojure',
+      name: 'Hack',
       proficiency: 0.7,
+      logo: HackLogo,
     }, {
-      name: 'Assembly',
-      proficiency: 0.6,
-    }, {
-      name: 'BASH',
-      proficiency: 0.4,
+      name: 'ClojureScript',
+      proficiency: 0.75,
+      logo: CLJSLogo,
     }, {
       name: 'SQL',
-      proficiency: 0.3,
+      proficiency: 0.7,
+      logo: SQLLogo,
     }],
     frameworks: [
+      'Re-frame',
       'Node.js',
       'Redux',
       'Express',
       'Koa.js',
-      'Angular',
-      'Ember',
-      'Sails',
+      'AngularJS',
       'Scrum',
-      'Mocha',
       'AVA',
     ],
     libraries: [
       'React',
       'Ramda',
       'Immutable',
-      'Chai',
+      'XHP',
       'Basscss',
       'Lodash',
+      'Reagent',
     ],
     tools: [
       'Unix CLI',
@@ -99,58 +105,61 @@ const DATA = {
       display: 'github.com/rsnara',
       link: 'https://github.com/rsnara',
       icon: 'github',
+    }, {
+      name: 'LinkedIn',
+      display: 'rsnara',
+      link: 'https://linkedin.com/in/rsnara',
+      icon: 'linkedin',
     }],
   },
   main: {
+    name: 'Ramanpreet Nara',
+    program: {
+      term: '4A',
+      nickname: 'Software Engineering',
+      name: 'Software Engineering',
+    },
     interests: [
       'Following technological advancements; scripting; digital art; Project Euler',
       'Over-engineering resumes using React.js',
     ],
     companies: [{
-      name: 'Rangle.io',
-      title: 'Full Stack JavaScript Developer',
-      range: 'Spring 2016',
+      name: 'Facebook',
+      title: 'Front-end Engineering Intern',
+      range: 'Winter 2017',
       projects: [{
-        name: 'Atlas',
-        tools: ['React', 'Angular 1.4', 'Koa', 'Redux', 'Ramda', 'Basscss'],
+        name: 'Interfaces: Web Core',
+        tools: ['XHP', 'JavaScript', 'CSS', 'Hack'],
         achievements: [
-          'Merged a TypeScript Angular MVC application into a React + Redux codebase',
-          'Crafted efficient methods to crunch 3000+ ResourceGuru bookings into vacation metrics',
-          'Developed REST APIs and a front-end to enable CRUD operations on developer skills',
-        ],
-      }, {
-        name: 'Mercatus',
-        tools: ['Angular 1.5', 'Jasmine', 'LESS'],
-        achievements: [
-          'Reinforced a team of 6 client devs (for 2 months) building a white-label e-commerce app',
-          'Helped migrate an MVC Angular web application to a component-oriented architecture',
-          'Refactored and tested the faceted search web front-end, ensuring 100% branch coverage',
+          'Worked on a project to greatly improve video viewing experience on Facebook\'s desktop website',
+          'Implemented and shipped animations for core components related to the HTML5 video player',
+          'Fixed layout bugs in the carded Right Hand Column, helping it ship to 100% of public users',
         ],
       }],
     }, {
       name: 'Rangle.io',
       title: 'Full Stack JavaScript Developer',
-      range: 'Fall 2015',
+      range: 'Fall 2015, Spring 2016',
       projects: [{
-        name: 'Sideboard',
-        tools: ['React', 'Ramda', 'Immutable', 'Keen.io'],
+        name: 'Team Sideboard',
+        tools: ['React', 'Redux', 'Ramda', 'Immutable', 'Keen.io'],
         achievements: [
-          'Built a Koa.js back-end to aggregate metrics from PivotalTracker APIs',
-          'Coauthored a React + Redux front-end to display metrics, and styled it with Sass',
+          'Co-authored Sideboard: A React front-end to PivotalTracker\'s APIs that computes and displays Scrum-related metrics relevant for Rangle.io teams',
         ],
       }, {
-        name: 'Atlas Old',
-        tools: ['Angular 1.4', 'TypeScript', 'Express', 'Mocha', 'Chai'],
+        name: 'Team Atlas',
+        tools: ['React', 'Angular 1.4', 'Koa.js', 'Redux', 'Ramda', 'Basscss'],
         achievements: [
-          'Used ResourceGuru APIs to implement Rangle.io\'s vacation request form',
-          'Decoupled, tested, and modularized spaghetti server code',
+          'Developed the Angular 1.4 app used by Rangle.io to schedule staff to projects',
+          'Helped re-architect and re-implement the Angular app, eventually merging it into Sideboard',
         ],
       }, {
-        name: 'Livefyre HTML Embed',
-        tools: ['JavaScript', 'Sass', 'DOM API', 'SVG', 'Webpack'],
+        name: 'Mercatus',
+        tools: ['Angular 1.5', 'Jasmine', 'LESS'],
         achievements: [
-          'Implemented dependency-free cross-browser compatible SVG animations',
-          'Unit tested code with Mocha + Chai, ensuring ~90% branch coverage',
+          'Did on-site consulting for a team of six client developers at Mercatus for over two months',
+          'Rebuilt the faceted search front-end of their web e-commerce application built with Angular 1.5',
+          'Helped them migrate their app from an MVC to a component oriented architecture',
         ],
       }],
     }, {
@@ -158,11 +167,11 @@ const DATA = {
       title: 'Angular JS Developer',
       range: 'Winter 2015',
       projects: [{
-        name: 'SalesTree',
-        tools: ['JavaScript', 'Angular', 'Broccoli', 'Gulp'],
+        name: 'Team SalesTree',
+        tools: ['JavaScript', 'Angular 1.2', 'Broccoli', 'Gulp'],
         achievements: [
-          'Setup facilities to monitor user activities and save client-side errors server-side',
-          'Overhauled client-side build infrastructure to reduce rebuild times by over 75%',
+          'Setup infrastructure to track user interactions and save client-side errors server-side',
+          'Re-implemented client-side build infrastructure to significantly reduce JavaScript rebuild times',
         ],
       }],
     }, {
@@ -170,12 +179,12 @@ const DATA = {
       title: 'Interactive Developer',
       range: 'Spring 2014',
       projects: [{
-        name: 'Projects:',
-        tools: ['PHP', 'MySQL', 'Puppet', 'Symfony 2'],
+        name: 'Accomplishments:',
+        tools: ['PHP', 'MySQL', 'Vagrant', 'Puppet', 'Symfony 2'],
         achievements: [
-          'Improved caching, reducing page load times on the Premier\'s website\'s by over 50%',
-          'Refactored authentication in a legacy PHP app to remove security vulnerabilities',
-          'Authored Packer and Puppet scripts to automatically build VM images for 4 projects',
+          'Leveraged caching with Symfony2 to halve page load times on the Premier\'s website',
+          'Refactored a legacy PHP app to remove security vulnerabilities with its authentication',
+          'Authored Packer and Puppet scripts to automatically build Vagrant VM images for four projects',
         ],
       }],
     }],
@@ -196,6 +205,15 @@ const DATA = {
       achievements: [
         'A Reddit clone built to experiment with the redux architecture',
         'Created a reddit-style comment tree, image previews, and multiple subreddits',
+      ],
+    }, {
+      name: 'play-cljs',
+      tools: ['ClojureScript', 'p5.js', 'boot'],
+      demos: ['https://github.com/oakes/play-cljs-examples'],
+      github: 'https://github.com/oakes/play-cljs',
+      achievements: [
+        'Corrected the image scaling algorithm in this ClojureScript game library',
+        'Built the image transforms :flip-x and :flip-y, making it easier to reuse images for animations',
       ],
     }],
   },

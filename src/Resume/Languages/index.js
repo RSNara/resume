@@ -6,11 +6,12 @@ const Languages = ({ data: languages }) => (
   <section style={style.main}>
     <SidebarHeading>Languages</SidebarHeading>
     <div>
-      {sortLanguages(languages).map((language, index) => (
+      {sortLanguages(languages).map((language) => (
         <Language
           name={language.name}
           proficiency={language.proficiency}
-          key={index} />
+          logo={language.logo}
+          key={language.name} />
       ))}
     </div>
   </section>

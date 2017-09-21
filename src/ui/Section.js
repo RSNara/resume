@@ -27,7 +27,7 @@ const Section = ({
       </div>
       <div style={{
         borderTop: '0.1px solid ' + color,
-        borderLeft: '0.5rem solid ' + color,
+        borderLeft: '0.25rem solid ' + color,
         backgroundColor: tinycolor(color).lighten(56),
         padding: '0.025rem 1.2rem',
       }}>
@@ -54,7 +54,8 @@ const defaultStyles = {
   },
   subheading: {
     fontSize: '0.85rem',
-    color: 'rgba(255,255,255,0.85)',
+    color: 'rgba(255,255,255,0.95)',
+    fontWeight: 'bold',
   },
 };
 
