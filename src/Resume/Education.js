@@ -1,9 +1,12 @@
 import React, { PropTypes } from 'react';
 import SidebarHeading from './SidebarHeading';
 
-const Education = ({ university, duration }) => (
+const Education = ({ university, duration, degree }) => (
   <section style={style.main}>
     <SidebarHeading align="right">Education</SidebarHeading>
+    <div style={{
+      ...style.text,
+    }}>{degree}</div>
     <div style={{
       ...style.text,
       fontWeight: 'bold',
@@ -24,6 +27,7 @@ const style = {
 Education.propTypes = {
   university: PropTypes.string.isRequired,
   duration: PropTypes.string.isRequired,
+  degree: PropTypes.string.isRequired,
 };
 
 export default Education;

@@ -17,6 +17,7 @@ const Sidebar = ({ data }) => (
       </div>
       <div>
         <Education
+          degree={data.education.degree}
           university={data.education.university}
           duration={data.education.duration} />
       </div>

@@ -26,7 +26,8 @@ const DATA = {
   sidebar: {
     education: {
       university: 'University of Waterloo',
-      duration: 'Sept. 13 - PRESENT',
+      degree: 'Bachelor of Software Engineering (B.SE.)',
+      duration: 'Sept. 13 - Apr. 18',
     },
     languages: [{
       name: 'JavaScript',
@@ -115,8 +116,8 @@ const DATA = {
   main: {
     name: 'Ramanpreet Nara',
     program: {
-      term: '4A',
-      nickname: 'Software Engineering',
+      term: '',
+      nickname: '',
       name: 'Software Engineering',
     },
     interests: [
@@ -126,14 +127,20 @@ const DATA = {
     companies: [{
       name: 'Facebook',
       title: 'Front-end Engineering Intern',
-      range: 'Winter 2017',
+      range: 'Winter 2017, Fall 2017',
       projects: [{
+        name: 'React Native',
+        tools: ['Java', 'Objective-C', 'JavaScript'],
+        achievements: [
+          'Re-implemented and greatly improved border-rendering algorithm for Android',
+          'Improved support for direction-aware styles across iOS and Android',
+        ],
+      }, {
         name: 'Interfaces: Web Core',
         tools: ['XHP', 'JavaScript', 'CSS', 'Hack'],
         achievements: [
-          'Worked on a project to greatly improve video viewing experience on Facebook\'s desktop website',
-          'Implemented and shipped animations for core components related to the HTML5 video player',
-          'Fixed layout bugs in the carded Right Hand Column, helping it ship to 100% of public users',
+          'Worked on a project to greatly improve video viewing experience on Facebook web',
+          'Implemented and shipped animations for the HTML5 video player',
         ],
       }],
     }, {
@@ -158,8 +165,7 @@ const DATA = {
         tools: ['Angular 1.5', 'Jasmine', 'LESS'],
         achievements: [
           'Did on-site consulting for a team of six client developers at Mercatus for over two months',
-          'Rebuilt the faceted search front-end of their web e-commerce application built with Angular 1.5',
-          'Helped them migrate their app from an MVC to a component oriented architecture',
+          'Rebuilt the faceted search front-end of their Angular 1.5 web e-commerce application built',
         ],
       }],
     }, {
