@@ -10,7 +10,16 @@ const ContactLink = ({
 }) => {
   return (
     <div style={style.main}>
-      <span style={style.name}>{name}:</span>
+      {/* <span style={style.name}>{name}: </span> */}
+      <div style={{
+        minWidth: '1.5rem',
+        display: 'flex',
+        justifyContent: 'center',
+        marginLeft: '0.5rem',
+        marginRight: '0.5rem',
+        }}>
+        <Icon name={icon} size="lg"/>
+      </div>
       <Link to={link}>
         {display}
       </Link>
@@ -34,6 +43,7 @@ const style = {
   },
   name: {
     fontWeight: 'bold',
+    paddingRight: '0.5rem',
   },
 };
 

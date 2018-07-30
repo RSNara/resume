@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import Logo from '../../ui/Logo';
 
 const Language = ({ name, logo }) => (
   <div style={style.main}>
@@ -9,14 +10,6 @@ const Language = ({ name, logo }) => (
   </div>
 );
 
-const Logo = ({ src }) => {
-  return (
-    <img
-      style={style.logo}
-      src={src}/>
-  );
-};
-
 const style = {
   main: {
     display: 'flex',
@@ -25,11 +18,6 @@ const style = {
   content: {
     display: 'flex',
     alignItems: 'center',
-  },
-  logo: {
-    marginLeft: '0.25em',
-    height: '1em',
-    width: '1em',
   },
 };
 

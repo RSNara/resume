@@ -51,7 +51,7 @@ const Main = ({ companies, projects, name, program }) => (
 
 const style = {
   main: {
-    padding: '2.5rem 1.25rem',
+    padding: '2.5rem 1.75rem 2.5rem 1.25rem',
     // backgroundColor: '#FFF9FB',
   },
 };

@@ -18,7 +18,7 @@ Link.propTypes = {
 };
 
 const defaultStyle = {
-  padding: '0 0 0 0.5rem',
+  padding: 0,
   textDecoration: 'none',
 };
 

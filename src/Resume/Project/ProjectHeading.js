@@ -29,6 +29,7 @@ const Tool = ({ name }) => {
       backgroundColor: Constant.COLORS.PRIMARY().lighten(51),
       marginLeft: '0.25rem',
       padding: '0.1rem 0.5rem',
+      color: Constant.COLORS.PRIMARY(),
       ...Bass.rounded,
     }}>
       { name }

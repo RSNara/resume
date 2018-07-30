@@ -16,7 +16,19 @@ const Project = ({
   return (
     <div style={style.main}>
       <ProjectHeading name={name} tools={tools} github={github}/>
-      <List items={items} style={style.list}/>
+      {
+        <ul style={style.list}>
+          {
+            items.map((item, i) => {
+              return (
+                <li key={i}>
+                  {item}
+                </li>
+              );
+            })
+          }
+        </ul>
+      }
     </div>
   );
 };

@@ -10,6 +10,8 @@ import CSSLogo from './images/css.svg';
 import JavaLogo from './images/java.svg';
 import CPPLogo from './images/cpp.svg';
 import SQLLogo from './images/postgres.svg';
+import KotlinLogo from './images/kotlin.svg';
+import Link from '../ui/Link';
 
 class Resume extends Component {
   render() {
@@ -35,7 +37,7 @@ const DATA = {
       logo: JSLogo,
     }, {
       name: 'Java',
-      proficiency: 0.6,
+      proficiency: 0.7,
       logo: JavaLogo,
     }, {
       name: 'C++',
@@ -61,16 +63,21 @@ const DATA = {
       name: 'SQL',
       proficiency: 0.7,
       logo: SQLLogo,
+    }, {
+      name: 'Kotlin',
+      proficiency: 0.7,
+      logo: KotlinLogo
     }],
     frameworks: [
       'Re-frame',
       'Node.js',
       'Redux',
       'Express',
-      'Koa.js',
+      'Koa',
       'AngularJS',
       'Scrum',
       'AVA',
+      'Spec',
     ],
     libraries: [
       'React',
@@ -93,9 +100,9 @@ const DATA = {
     ],
     links: [{
       name: 'Phone',
-      display: '1-647-609-4290',
-      link: 'tel:+16576094290',
-      icon: 'mobile',
+      display: '650-561-5687',
+      link: 'tel:+16505615687',
+      icon: 'phone',
     }, {
       name: 'Email',
       display: 'rsnara@uwaterloo.ca',
@@ -130,16 +137,20 @@ const DATA = {
       range: 'Winter 2017, Fall 2017',
       projects: [{
         name: 'React Native',
-        tools: ['Java', 'Objective-C', 'JavaScript'],
+        tools: ['Java', 'Objective-C', 'JavaScript', 'Sonar'],
         achievements: [
-          'Re-implemented and greatly improved border-rendering algorithm for Android',
-          'Improved support for direction-aware styles across iOS and Android',
+          <span>Integrated React DevTools into Sonar (<Link to="https://fburl.com/rdts">fburl.com/rdts</Link>)</span>,
+          <span>Integrated Relay Debugger into Sonar</span>,
+          <span>Made border rendering algorithm on Android W3C spec-compliant (<Link to="https://fburl.com/barn">fburl.com/barn</Link>)</span>,
+          <span>Improved support for direction-aware styles across iOS and Android (<Link to="https://fburl.com/dsrn">fburl.com/dsrn</Link>)</span>,
+          'Re-implemented iOS backend of <WebView/> component using WKWebView'
         ],
       }, {
         name: 'Interfaces: Web Core',
         tools: ['XHP', 'JavaScript', 'CSS', 'Hack'],
         achievements: [
-          'Worked on a project to greatly improve video viewing experience on Facebook web',
+          <span>Moved Watch and Scroll player to the Right Hand Column (<Link to="https://fburl.com/wnsrhc">fburl.com/wnsrhc</Link>)</span>,
+          <span>Made Watch and Scroll player persist across page transitions (<Link to="https://fburl.com/wnsrhc">fburl.com/wnsrhc</Link>)</span>,
           'Implemented and shipped animations for the HTML5 video player',
         ],
       }],
@@ -164,8 +175,8 @@ const DATA = {
         name: 'Mercatus',
         tools: ['Angular 1.5', 'Jasmine', 'LESS'],
         achievements: [
-          'Did on-site consulting for a team of six client developers at Mercatus for over two months',
-          'Rebuilt the faceted search front-end of their Angular 1.5 web e-commerce application built',
+          'Did on-site consulting for a team of six client developers at Mercatus for 2+ months',
+          'Rebuilt the faceted search front-end of their Angular 1.5 web e-commerce application',
         ],
       }],
     }, {
@@ -189,37 +200,29 @@ const DATA = {
         tools: ['PHP', 'MySQL', 'Vagrant', 'Puppet', 'Symfony 2'],
         achievements: [
           'Leveraged caching with Symfony2 to halve page load times on the Premier\'s website',
-          'Refactored a legacy PHP app to remove security vulnerabilities with its authentication',
+          'Refactored a legacy PHP app to remove security vulnerabilities with authentication',
           'Authored Packer and Puppet scripts to automatically build Vagrant VM images for four projects',
         ],
       }],
     }],
     projects: [{
-      name: 'GLISP - The G LISP interpreter',
-      tools: ['JavaScript', 'Immutable', 'AVA', 'Ramda', 'Rollup'],
+      name: 'OJ - A Java Compiler',
+      tools: ['Kotlin', 'Spec'],
       demos: [],
-      github: 'https://github.com/rsnara/glisp',
+      github: 'https://github.com/ayushbhagat/oj',
       achievements: [
-        'A feature-rich, and isomorphic LISP implementation built with JavaScript',
-        'Supports immutable data structures, JS interop, destructuring, macros, and exceptions',
-      ],
+        'Coauthored a compiler for JOOS 1W, a large subset of Java 1.3',
+        <span>Supports visibility, packages, type checking, strings, method overloading/overriding, <Link to="https://www.student.cs.uwaterloo.ca/~cs444/joos.html">and more...</Link></span>,
+        'Most correct implementation of JOOS 1W in class of 2018'
+      ]
     }, {
       name: 'Reddit Client',
       tools: ['Reddit API', 'React', 'Redux', 'redux-saga', 'reselect'],
       demos: ['https://rc-rsnara.herokuapp.com/r/pics/hot'],
       github: 'https://github.com/rsnara/reddit-client',
       achievements: [
-        'A Reddit clone built to experiment with the redux architecture',
+        'A Reddit clone built to experiment with Redux and Reselect',
         'Created a reddit-style comment tree, image previews, and multiple subreddits',
-      ],
-    }, {
-      name: 'play-cljs',
-      tools: ['ClojureScript', 'p5.js', 'boot'],
-      demos: ['https://github.com/oakes/play-cljs-examples'],
-      github: 'https://github.com/oakes/play-cljs',
-      achievements: [
-        'Corrected the image scaling algorithm in this ClojureScript game library',
-        'Built the image transforms :flip-x and :flip-y, making it easier to reuse images for animations',
       ],
     }],
   },
