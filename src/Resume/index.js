@@ -132,26 +132,33 @@ const DATA = {
       'Over-engineering resumes using React.js',
     ],
     companies: [{
-      name: 'Facebook',
+      name: 'Meta',
+      title: 'Front-end Engineer',
+      range: 'July 2018, Present',
+      projects: [{
+        name: 'React Native',
+        tools: ['Java', 'Objective-C', 'JavaScript', 'Flipper'],
+        achievements: [
+          <span>Open-sourced JSI: the C++ interface React Native uses for JavaScript VMs</span>,
+          <span>Re-implemented and productionized React Native's <i>new</i> NativeModule code-gen</span>,
+          <span>Productionized and shipped React Native's <i>new</i> NativeModule system to the Facebook app</span>,
+          <span>Built processes to ship React Native's <i>new</i> NativeModule system to all Meta React Native apps</span>,
+          <span>Leading a team of two others, productionized and shipped React Native's <i>new</i> initialization layer (i.e: Bridgeless mode) to the Facebook app</span>
+        ],
+      }],
+    },{
+      name: 'Facebook Inc.',
       title: 'Front-end Engineering Intern',
       range: 'Winter 2017, Fall 2017',
       projects: [{
         name: 'React Native',
-        tools: ['Java', 'Objective-C', 'JavaScript', 'Sonar'],
+        tools: ['Java', 'Objective-C', 'JavaScript', 'Flipper'],
         achievements: [
-          <span>Integrated React DevTools into Sonar (<Link to="https://fburl.com/rdts">fburl.com/rdts</Link>)</span>,
-          <span>Integrated Relay Debugger into Sonar</span>,
-          <span>Made border rendering algorithm on Android W3C spec-compliant (<Link to="https://fburl.com/barn">fburl.com/barn</Link>)</span>,
-          <span>Improved support for direction-aware styles across iOS and Android (<Link to="https://fburl.com/dsrn">fburl.com/dsrn</Link>)</span>,
-          'Re-implemented iOS backend of <WebView/> component using WKWebView'
-        ],
-      }, {
-        name: 'Interfaces: Web Core',
-        tools: ['XHP', 'JavaScript', 'CSS', 'Hack'],
-        achievements: [
-          <span>Moved Watch and Scroll player to the Right Hand Column (<Link to="https://fburl.com/wnsrhc">fburl.com/wnsrhc</Link>)</span>,
-          <span>Made Watch and Scroll player persist across page transitions (<Link to="https://fburl.com/wnsrhc">fburl.com/wnsrhc</Link>)</span>,
-          'Implemented and shipped animations for the HTML5 video player',
+          <span>Integrated React DevTools into Flipper (<Link to="https://fburl.com/rdts">fburl.com/rdts</Link>)</span>,
+          <span>Integrated Relay Debugger into Flipper</span>,
+          <span>Made border rendering on Android W3C spec-compliant (<Link to="https://fburl.com/barn">fburl.com/barn</Link>)</span>,
+          <span>Introduced start*, end* direction-aware styles in React Native (<Link to="https://fburl.com/dsrn">fburl.com/dsrn</Link>)</span>,
+          'Replaced the iOS backend of <WebView/> component with WKWebView'
         ],
       }],
     }, {
@@ -159,26 +166,20 @@ const DATA = {
       title: 'Full Stack JavaScript Developer',
       range: 'Fall 2015, Spring 2016',
       projects: [{
-        name: 'Team Sideboard',
-        tools: ['React', 'Redux', 'Ramda', 'Immutable', 'Keen.io'],
-        achievements: [
-          'Co-authored Sideboard: A React front-end to PivotalTracker\'s APIs that computes and displays Scrum-related metrics relevant for Rangle.io teams',
-        ],
-      }, {
-        name: 'Team Atlas',
+        name: 'Atlas',
         tools: ['React', 'Angular 1.4', 'Koa.js', 'Redux', 'Ramda', 'Basscss'],
         achievements: [
-          'Developed the Angular 1.4 app used by Rangle.io to schedule staff to projects',
-          'Helped re-architect and re-implement the Angular app, eventually merging it into Sideboard',
+          'Worked on Atlas: an in-house app was used by management to staff projects',
+          'Merged Atlas into another in-house app that tracked Scrum-related metrics for teams',
         ],
       }, {
         name: 'Mercatus',
         tools: ['Angular 1.5', 'Jasmine', 'LESS'],
         achievements: [
-          'Did on-site consulting for a team of six client developers at Mercatus for 2+ months',
+          'On-site Angular consulting for a team of six client developers at Mercatus for ~2 months',
           'Rebuilt the faceted search front-end of their Angular 1.5 web e-commerce application',
         ],
-      }],
+      }, ],
     }, {
       name: 'Ntree',
       title: 'Angular JS Developer',
@@ -187,8 +188,8 @@ const DATA = {
         name: 'Team SalesTree',
         tools: ['JavaScript', 'Angular 1.2', 'Broccoli', 'Gulp'],
         achievements: [
-          'Setup infrastructure to track user interactions and save client-side errors server-side',
-          'Re-implemented client-side build infrastructure to significantly reduce JavaScript rebuild times',
+          'Setup infrastructure to track user interactions and log client-side errors server-side',
+          'Re-implemented client-side build infrastructure to improve devx: reduce JavaScript building times',
         ],
       }],
     }, {
