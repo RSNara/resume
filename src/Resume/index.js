@@ -105,8 +105,8 @@ const DATA = {
       icon: 'phone',
     }, {
       name: 'Email',
-      display: 'rsnara@uwaterloo.ca',
-      link: 'mailto:rsnara@uwaterloo.ca',
+      display: 'ramanpreetnara@gmail.com',
+      link: 'mailto:ramanpreetnara@gmail.com',
       icon: 'envelope',
     }, {
       name: 'GitHub',
@@ -132,18 +132,18 @@ const DATA = {
       'Over-engineering resumes using React.js',
     ],
     companies: [{
-      name: 'Meta',
+      name: 'Meta Inc.',
       title: 'Front-end Engineer',
       range: 'July 2018, Present',
       projects: [{
         name: 'React Native',
         tools: ['Java', 'Objective-C', 'JavaScript', 'Flipper'],
         achievements: [
-          <span>Open-sourced JSI: the C++ interface React Native uses for JavaScript VMs</span>,
-          <span>Re-implemented and productionized React Native's <i>new</i> NativeModule code-gen</span>,
-          <span>Productionized and shipped React Native's <i>new</i> NativeModule system to the Facebook app</span>,
-          <span>Built processes to ship React Native's <i>new</i> NativeModule system to all Meta React Native apps</span>,
-          <span>Leading a team of two others, productionized and shipped React Native's <i>new</i> initialization layer (i.e: Bridgeless mode) to the Facebook app</span>
+          <span>Open-sourced jsi: React Native's c++ api for JavaScript VMs</span>,
+          <span>Productionized React Native's <i>new</i> NativeModule system</span>,
+          <span>Productionized React Native's <i>new</i> runtime (leading two others)</span>,
+          <span>Lead workstream to develop New Architecture backwards compatibility layers</span>,
+          <span>Supported New Architecture migration for 30+ internal VR panel apps</span>,
         ],
       }],
     },{
@@ -180,18 +180,6 @@ const DATA = {
           'Rebuilt the faceted search front-end of their Angular 1.5 web e-commerce application',
         ],
       }, ],
-    }, {
-      name: 'Ntree',
-      title: 'Angular JS Developer',
-      range: 'Winter 2015',
-      projects: [{
-        name: 'Team SalesTree',
-        tools: ['JavaScript', 'Angular 1.2', 'Broccoli', 'Gulp'],
-        achievements: [
-          'Setup infrastructure to track user interactions and log client-side errors server-side',
-          'Re-implemented client-side build infrastructure to improve devx: reduce JavaScript building times',
-        ],
-      }],
     }, {
       name: 'Ontario Ministry of Govt. Services',
       title: 'Interactive Developer',
